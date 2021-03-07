@@ -22,7 +22,16 @@
 
 
 //取得したIDをクリックするとイベントを起こす処理
-document.getElementById("test").addEventListener('click', function() {
+// document.getElementById("test").addEventListener('click', function() {
   //thisは↑の事をさす
-  this.textContent = 'クリックされた。'
-});
+//   this.textContent = 'クリックされた。'
+// });
+
+
+//配列
+const weather = ["晴れ","曇り","雨"];
+//配列を追加
+weather.push("雪");
+// index0から
+document.getElementById("test").textContent = "今日の天気は" + weather[3];
+
