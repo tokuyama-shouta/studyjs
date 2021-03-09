@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+#test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  background-color: #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#test.test2{
+  background-color: yellow;
+}
+
+ul{
+  list-style: none;
+}
+li{
+  width: 100px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  border-radius: 3px;
+}
+/* :not 「○○以外の要素」を指定する*/
+/* :first-of-type 兄弟要素の中で最初の要素全て*/
+li:not(:first-of-type){
+  margin-top:5px;
+}
+
+li.test {
+  opacity: 0;
+}

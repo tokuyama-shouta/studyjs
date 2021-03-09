@@ -36,12 +36,24 @@
 // document.getElementById("test").textContent = "今日の天気は" + weather[3];
 
 
-const weather = ["晴れ","曇り","雨","雪"]
-//lengthで配列の中身の回数分繰り返すfor文
-for (let i = 0; i < weather.length; i++) {
-  //createElementでタグの要素を指定
-  let li = document.createElement("li");
-  li.textContent = weather[i];
-  //子要素を追加
-  document.getElementById("number").appendChild(li);
-}
+// const weather = ["晴れ","曇り","雨","雪"]
+// //lengthで配列の中身の回数分繰り返すfor文
+// for (let i = 0; i < weather.length; i++) {
+//   //createElementでタグの要素を指定
+//   let li = document.createElement("li");
+//   li.textContent = weather[i];
+//   //子要素を追加
+//   document.getElementById("number").appendChild(li);
+// }
+
+document.getElementById("test").addEventListener("click", function() {
+  // toggleでtest2というクラスをつけたり外したりできる
+  this.classList.toggle("test2");
+  // querySelectorAll
+  // 指定したセレクタに一致する最初のHTML要素(Element)を取得する
+  const listElements = document.querySelectorAll(".list li");
+  for (let i = 0; i < listElements.length; i++) {
+    //liにクラスをつけたり外したり
+    listElements[i].classList.toggle("test");
+  }
+});
