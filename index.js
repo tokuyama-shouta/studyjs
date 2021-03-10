@@ -46,14 +46,23 @@
 //   document.getElementById("number").appendChild(li);
 // }
 
-document.getElementById("test").addEventListener("click", function() {
-  // toggleでtest2というクラスをつけたり外したりできる
-  this.classList.toggle("test2");
-  // querySelectorAll
-  // 指定したセレクタに一致する最初のHTML要素(Element)を取得する
-  const listElements = document.querySelectorAll(".list li");
-  for (let i = 0; i < listElements.length; i++) {
-    //liにクラスをつけたり外したり
-    listElements[i].classList.toggle("test");
-  }
-});
+// document.getElementById("test").addEventListener("click", function() {
+//   // toggleでtest2というクラスをつけたり外したりできる
+//   this.classList.toggle("test2");
+//   // querySelectorAll
+//   // 指定したセレクタに一致する最初のHTML要素(Element)を取得する
+//   const listElements = document.querySelectorAll(".list li");
+//   for (let i = 0; i < listElements.length; i++) {
+//     //liにクラスをつけたり外したり
+//     listElements[i].classList.toggle("test");
+//   }
+// });
+
+//0~1未満の数値をランダムに生成
+const randomNumber = Math.random();
+document.getElementById("test").textContent = Math.floor(randomNumber);
+
+const omikuji = ["大吉","吉","凶"];
+const omikujiRandomNumber = Math.floor(Math.random() * omikuji.length)
+document.getElementById("omikuji").textContent = omikuji[omikujiRandomNumber];
+
