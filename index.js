@@ -67,17 +67,22 @@
 // const omikujiRandomNumber = Math.floor(Math.random() * omikuji.length)
 // document.getElementById("omikuji").textContent = omikuji[omikujiRandomNumber];
 
-const score = Math.floor(Math.random() * 20);
-document.getElementById("score").textContent = score;
-const Answer = document.getElementById("test")
-if(score === 20){
-  Answer.textContent = "scoreは20です。"
-} else if(score === 10) {
-  Answer.textContent = "scoreは10です。"
-}else if(score === 50) {
-  Answer.textContent = "scoreは50です。"
-}else{
-  Answer.textContent = "scoreは20ではないです。"
-}
+// const score = Math.floor(Math.random() * 20);
+// document.getElementById("score").textContent = score;
+// const Answer = document.getElementById("test")
+// if(score === 20){
+//   Answer.textContent = "scoreは20です。"
+// } else if(score === 10) {
+//   Answer.textContent = "scoreは10です。"
+// }else if(score === 50) {
+//   Answer.textContent = "scoreは50です。"
+// }else{
+//   Answer.textContent = "scoreは20ではないです。"
+// }
 
+const a = 2, b = 3;
+
+if(a > 1) {
+  console.log(a > 1);
+}
 
