@@ -80,9 +80,46 @@
 //   Answer.textContent = "scoreは20ではないです。"
 // }
 
-const a = 2, b = 3;
+// const a = 2, b = 3;
 
-if(a > 1) {
-  console.log(a > 1);
+// if(a > 1) {
+//   console.log(a > 1);
+// }
+
+const weathers = ["晴","雲","雨","雪","雷"]
+  randomNumber = Math.floor(Math.random() * weathers.length),
+
+  randomWeather = weathers[randomNumber];
+
+document.getElementById("weather").textContent = "今日の天気は" + randomWeather + "です。";
+
+const otenki = document.getElementById("weathersMessage");
+// if(randomWeather === "晴"){
+//   otenki.textContent = "今日は晴れです。";
+// } else if (randomWeather === "雲") {
+//   otenki.textContent = "今日はクモりです。";
+// } else if (randomWeather === "雨") {
+//   otenki.textContent = "雨やん";
+// } else if (randomWeather === "雪") {
+//   otenki.textContent = "雪降ってる";
+// }
+
+
+
+switch (randomWeather) {
+  case "晴":
+    otenki.textContent = "今日は晴れです。";
+    break;
+  case "雲":
+    otenki.textContent = "今日はクモりです。";
+    break;
+  case "雨":
+    otenki.textContent = "雨やん";
+    break;
+  case "雪":
+    otenki.textContent = "雪降ってる";
+    break;
+  default:
+    otenki.textContent = "今日の天気ヤバイ";
 }
 
