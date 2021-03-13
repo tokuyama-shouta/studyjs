@@ -86,14 +86,14 @@
 //   console.log(a > 1);
 // }
 
-const weathers = ["晴","雲","雨","雪","雷"]
-  randomNumber = Math.floor(Math.random() * weathers.length),
+// const weathers = ["晴","雲","雨","雪","雷"]
+//   randomNumber = Math.floor(Math.random() * weathers.length),
 
-  randomWeather = weathers[randomNumber];
+//   randomWeather = weathers[randomNumber];
 
-document.getElementById("weather").textContent = "今日の天気は" + randomWeather + "です。";
+// document.getElementById("weather").textContent = "今日の天気は" + randomWeather + "です。";
 
-const otenki = document.getElementById("weathersMessage");
+// const otenki = document.getElementById("weathersMessage");
 // if(randomWeather === "晴"){
 //   otenki.textContent = "今日は晴れです。";
 // } else if (randomWeather === "雲") {
@@ -106,20 +106,36 @@ const otenki = document.getElementById("weathersMessage");
 
 
 
-switch (randomWeather) {
-  case "晴":
-    otenki.textContent = "今日は晴れです。";
-    break;
-  case "雲":
-    otenki.textContent = "今日はクモりです。";
-    break;
-  case "雨":
-    otenki.textContent = "雨やん";
-    break;
-  case "雪":
-    otenki.textContent = "雪降ってる";
-    break;
-  default:
-    otenki.textContent = "今日の天気ヤバイ";
+// switch (randomWeather) {
+//   case "晴":
+//     otenki.textContent = "今日は晴れです。";
+//     break;
+//   case "雲":
+//     otenki.textContent = "今日はクモりです。";
+//     break;
+//   case "雨":
+//     otenki.textContent = "雨やん";
+//     break;
+//   case "雪":
+//     otenki.textContent = "雪降ってる";
+//     break;
+//   default:
+//     otenki.textContent = "今日の天気ヤバイ";
+// }
+
+
+const tax = 1.1;
+function insertText(itemPrice,element) {
+  function calculation(price) {
+    return Math.floor(price * tax);
+    
+  }
+  document.getElementById(element).textContent = itemPrice + "円の商品の税込み価格は" + calculation(itemPrice) + "円です。";
+
 }
+insertText(100,"result");
+insertText(200,"result2");
+insertText(300,"result3");
+
+
 
