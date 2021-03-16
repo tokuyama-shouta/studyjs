@@ -144,7 +144,7 @@ const item = {
   sale: true,
   parts: ["CPU","メモリ","HDD"],
   a:{
-    b:"テスト"
+    b:"テストdayo"
   }
 }
 //呼び出すitemの中のname or price item.name or item.price
