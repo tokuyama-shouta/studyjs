@@ -137,33 +137,44 @@
 // insertText(200,"result2");
 // insertText(300,"result3");
 
-const item = {
-  //左がkey 右がvalue
-  name: "パソコン",
-  price: 100000,
-  sale: true,
-  parts: ["CPU","メモリ","HDD"],
-  a:{
-    b:"テストdayo"
-  }
-}
+// const item = {
+//   //左がkey 右がvalue
+//   name: "パソコン",
+//   price: 100000,
+//   sale: true,
+//   parts: ["CPU","メモリ","HDD"],
+//   a:{
+//     b:"テストdayo"
+//   }
+// }
 //呼び出すitemの中のname or price item.name or item.price
-document.getElementById("name").textContent = "商品名は" + item.name;
-document.getElementById("price").textContent = "値段は" + item.price + "円です。";
+// document.getElementById("name").textContent = "商品名は" + item.name;
+// document.getElementById("price").textContent = "値段は" + item.price + "円です。";
 
-item
+// item
 
-if (item["sale"]){
-  document.getElementById("sale").textContent = "値段は" + item.name + "はセール中です。";
+// if (item["sale"]){
+//   document.getElementById("sale").textContent = "値段は" + item.name + "はセール中です。";
 
-}
+// }
 
-let text = '';
-for (let i = 0; i < item.parts.length; i++){
-  text += item.parts[i];
-  if(i !== item.parts.length - 1){
-    text += "・";
-  }
-}
-document.getElementById("parts").textContent = item.name + "のパーツは" + text + "です。";
-document.getElementById("test").textContent = item["a"]["b"];
+// let text = '';
+// for (let i = 0; i < item.parts.length; i++){
+//   text += item.parts[i];
+//   if(i !== item.parts.length - 1){
+//     text += "・";
+//   }
+// }
+// document.getElementById("parts").textContent = item.name + "のパーツは" + text + "です。";
+// document.getElementById("test").textContent = item["a"]["b"];
+
+//型
+// number 数値
+// string 文字列
+let input = document.getElementsById("input").textContent;
+//typeof 何の型かわかる
+console.log(typeof input)
+// number型に変換
+input = Number(input)
+console.log(typeof input)
+document.getElementById("output").textContent = input + 1000;
