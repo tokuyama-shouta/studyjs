@@ -37,6 +37,16 @@ li.test {
   opacity: 0;
 } */ 
 
-body{
+/* body{
   font-size: 100px;
+} */
+
+main{
+  max-width: 1000px;
+  width: 100%;
+  padding: 20px;
+  margin: 50px auto;
+  background-color: #ddd;
+  font-size: 30px;
+  line-height: 1.4;
 }

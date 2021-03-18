@@ -168,13 +168,35 @@
 // document.getElementById("parts").textContent = item.name + "のパーツは" + text + "です。";
 // document.getElementById("test").textContent = item["a"]["b"];
 
-//型
-// number 数値
-// string 文字列
-let input = document.getElementsById("input").textContent;
-//typeof 何の型かわかる
-console.log(typeof input)
-// number型に変換
-input = Number(input)
-console.log(typeof input)
-document.getElementById("output").textContent = input + 1000;
+// //型
+// // number 数値
+// // string 文字列
+// let input = document.getElementsById("input").textContent;
+// //typeof 何の型かわかる
+// console.log(typeof input)
+// // number型に変換
+// input = Number(input)
+// console.log(typeof input)
+// document.getElementById("output").textContent = input + 1000;
+
+const today = new Date(),
+  days = ["日","月","火","水","木","金","土"];
+
+function outputDate(date) {
+  
+  let outputText = "「" + today.getFullYear() + "年";
+  outputText += (today.getMonth() + 1) + "月";
+  outputText += today.getDate() + "日";
+  outputText += today.getHours() + "時";
+  outputText += today.getMinutes() + "分";
+  outputText += today.getSeconds() + "秒"
+  outputText += today.getMilliseconds() + "ミリ秒";
+  outputText += "(" + days[today.getDay()] + ")";
+  outputText += "」です"
+
+}
+
+document.getElementById("date").textContent = "今は" + outputDate(today);
+
+today.setDate(today.getDate() + 1);
+document.getElementById("tomorrow").textContent = "明日の今は" + outputText(today);
