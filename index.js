@@ -192,7 +192,7 @@ function outputDate(date) {
   outputText += today.getSeconds() + "秒"
   outputText += today.getMilliseconds() + "ミリ秒";
   outputText += "(" + days[today.getDay()] + ")";
-  outputText += "」です"
+  outputText += "」です";
 
 }
 
