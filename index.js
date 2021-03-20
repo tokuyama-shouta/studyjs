@@ -201,7 +201,27 @@
 // today.setDate(today.getDate() + 1);
 // document.getElementById("tomorrow").textContent = "明日の今は" + outputText(today);
 
-windows.addEventListener("scroll", function() {
-  let scroll = document.documentElement.scrollTop;
-  console.log(scroll);
-})
+// windows.addEventListener("scroll", function() {
+//   let scroll = document.documentElement.scrollTop;
+//   console.log(scroll);
+// })
+
+// function test() {
+//   console.log("test");
+// }
+
+// setTimeout(function() {
+//   console.log("test2");
+  
+//   setTimeout(function() {
+//     console.log("test3");
+//   }, 2000);
+  
+// }, 2000);
+// console.log("test");
+
+document.getElementById("test").addEventListener("click",function() {
+  setTimeout(function() {
+    document.getElementById("contents").style.display = "block";
+  },1000);
+});
