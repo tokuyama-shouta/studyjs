@@ -179,24 +179,29 @@
 // console.log(typeof input)
 // document.getElementById("output").textContent = input + 1000;
 
-const today = new Date(),
-  days = ["日","月","火","水","木","金","土"];
+// const today = new Date(),
+//   days = ["日","月","火","水","木","金","土"];
 
-function outputDate(date) {
+// function outputDate(date) {
   
-  let outputText = "「" + today.getFullYear() + "年";
-  outputText += (today.getMonth() + 1) + "月";
-  outputText += today.getDate() + "日";
-  outputText += today.getHours() + "時";
-  outputText += today.getMinutes() + "分";
-  outputText += today.getSeconds() + "秒"
-  outputText += today.getMilliseconds() + "ミリ秒";
-  outputText += "(" + days[today.getDay()] + ")";
-  outputText += "」です";
+//   let outputText = "「" + today.getFullYear() + "年";
+//   outputText += (today.getMonth() + 1) + "月";
+//   outputText += today.getDate() + "日";
+//   outputText += today.getHours() + "時";
+//   outputText += today.getMinutes() + "分";
+//   outputText += today.getSeconds() + "秒"
+//   outputText += today.getMilliseconds() + "ミリ秒";
+//   outputText += "(" + days[today.getDay()] + ")";
+//   outputText += "」です";
 
-}
+// }
 
-document.getElementById("date").textContent = "今は" + outputDate(today);
+// document.getElementById("date").textContent = "今は" + outputDate(today);
 
-today.setDate(today.getDate() + 1);
-document.getElementById("tomorrow").textContent = "明日の今は" + outputText(today);
+// today.setDate(today.getDate() + 1);
+// document.getElementById("tomorrow").textContent = "明日の今は" + outputText(today);
+
+windows.addEventListener("scroll", function() {
+  let scroll = document.documentElement.scrollTop;
+  console.log(scroll);
+})
