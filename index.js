@@ -220,8 +220,20 @@
 // }, 2000);
 // console.log("test");
 
-document.getElementById("test").addEventListener("click",function() {
-  setTimeout(function() {
-    document.getElementById("contents").style.display = "block";
-  },1000);
-});
+// document.getElementById("test").addEventListener("click",function() {
+//   setTimeout(function() {
+//     document.getElementById("contents").style.display = "block";
+//   },1000);
+// });
+
+let elapsedTime = 0;
+document.getElementById("time").textContent = elapsedTime;
+
+// 一秒毎に処理をする
+const timeId = setInterval(() => {
+  elapsedTime++;
+  document.getElementById("time").textContent = elapsedTime;
+  if(elapsedTime === 5) {
+    clearInterval(timeId);
+  }
+}, 1000);
