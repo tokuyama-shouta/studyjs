@@ -226,14 +226,38 @@
 //   },1000);
 // });
 
-let elapsedTime = 0;
-document.getElementById("time").textContent = elapsedTime;
+// let elapsedTime = 0;
+// document.getElementById("time").textContent = elapsedTime;
 
-// 一秒毎に処理をする
-const timeId = setInterval(() => {
-  elapsedTime++;
-  document.getElementById("time").textContent = elapsedTime;
-  if(elapsedTime === 5) {
-    clearInterval(timeId);
-  }
-}, 1000);
+// // 一秒毎に処理をする
+// const timeId = setInterval(() => {
+//   elapsedTime++;
+//   document.getElementById("time").textContent = elapsedTime;
+//   if(elapsedTime === 5) {
+//     clearInterval(timeId);
+//   }
+// }, 1000);
+
+
+
+// function tax(number) {
+//   return number * 1.08;
+// }
+
+// const tax = (number) => {
+//   return number * 1.08;
+// }
+
+// // const tax = number => number * 1.08;
+// const tax = () => 100 * 1.08;
+// document.getElementById('test').textContent = tax(100);
+// document.getElementById('test').addEventListener("click", function() {
+//   // ↑
+//   this.textContent = "クリックされました。";
+// })
+
+document.getElementById('test').addEventListener("click", function()  {
+  setTimeout(() => {
+    this.textContent = 'クリックされました。'
+  }, 1000)
+})
