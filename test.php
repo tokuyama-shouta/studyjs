@@ -42,9 +42,9 @@ echo '</pre>';
 
 $blogs = [$blog1,$blog2];
 
-echo '<pre>';
-var_dump($blogs);
-echo '</pre>';
+// echo '<pre>';
+// var_dump($blogs);
+// echo '</pre>';
 
 //定数
 // echo ID;
@@ -60,6 +60,19 @@ echo '</pre>';
 //データ型
 // ver_dump(ID);
 
+foreach($blog1 as $blog) {
+  echo $blog;
+}
+
+foreach($blog2 as $key => $value) {
+  echo $key.$value;
+}
+
+foreach($blogs as $blog) {
+  foreach($blog as $value) {
+    echo $value;
+  }
+}
 
 
 ?> 
