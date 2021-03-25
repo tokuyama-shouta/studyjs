@@ -58,7 +58,7 @@ $blogs = [$blog1,$blog2];
 // print_r($tag);
 
 //データ型
-// ver_dump(ID);
+ver_dump(ID);
 
 foreach($blog1 as $blog) {
   echo $blog;
