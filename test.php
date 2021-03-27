@@ -58,20 +58,25 @@ $blogs = [$blog1,$blog2];
 // print_r($tag);
 
 // データ型
-ver_dump(ID);
+// ver_dump(ID);
 
-foreach($blog1 as $blog) {
-  echo $blog;
-}
+// foreach($blog1 as $blog) {
+//   echo $blog;
+// }
 
-foreach($blog2 as $key => $value) {
-  echo $key.$value;
-}
+// foreach($blog2 as $key => $value) {
+//   echo $key.$value;
+// }
 
-foreach($blogs as $blog) {
-  foreach($blog as $value) {
-    echo $value;
-  }
+// foreach($blogs as $blog) {
+//   foreach($blog as $value) {
+//     echo $value;
+//   }
+// }
+
+$_blog = $_POST;
+foreach($blog as $key => $value) {
+  echo $key.htmlspecialchars($value,ENT_QUOTES,'UTF-8');
 }
 
 
