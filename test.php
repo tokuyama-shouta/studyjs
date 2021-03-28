@@ -73,11 +73,19 @@ $blogs = [$blog1,$blog2];
 //     echo $value;
 //   }
 // }
-
 $_blog = $_POST;
-foreach($blog as $key => $value) {
-  echo $key.htmlspecialchars($value,ENT_QUOTES,'UTF-8');
+if($blog['publish_status'] === 'publish'){
+  foreach($blog as $key => $value) {
+    echo $key.htmlspecialchars($value,ENT_QUOTES,'UTF-8');
+  }
+} elseif($blog['publish_status'] === 'un_publish'){
+ echo '公開中の記事はありません。';
+} else {
+  echo '記事はありません。';
 }
+
+
+
 
 
 ?> 
