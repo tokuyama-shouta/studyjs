@@ -74,19 +74,19 @@ $blogs = [$blog1,$blog2];
 //   }
 // }
 
-$_blog = $_POST;
-if($blog['publish_status'] === 'publish')
-if($blog['publish_status'] === 'publish'){
-  foreach($blog as $key => $value) {
-    echo $key.htmlspecialchars($value,ENT_QUOTES,'UTF-8');
-  }
-} elseif($blog['publish_status'] === 'un_publish'){
- echo '公開中の記事はありません。';
-} else {
-  echo '記事はありません。';
-}
+// $_blog = $_POST;
+// if($blog['publish_status'] === 'publish')
+// if($blog['publish_status'] === 'publish'){
+//   foreach($blog as $key => $value) {
+//     echo $key.htmlspecialchars($value,ENT_QUOTES,'UTF-8');
+//   }
+// } elseif($blog['publish_status'] === 'un_publish'){
+//  echo '公開中の記事はありません。';
+// } else {
+//   echo '記事はありません。';
+// }
 ?> 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -101,4 +101,4 @@ if($blog['publish_status'] === 'publish'){
   <hr>
 
 </body>
-</html>
+</html> -->

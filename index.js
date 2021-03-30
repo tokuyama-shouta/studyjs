@@ -256,8 +256,31 @@
 //   this.textContent = "クリックされました。";
 // })
 
-document.getElementById('test').addEventListener("click", function()  {
-  setTimeout(() => {
-    this.textContent = 'クリックされました。'
-  }, 1000)
-})
+// document.getElementById('test').addEventListener("click", function()  {
+//   setTimeout(() => {
+//     this.textContent = 'クリックされました。'
+//   }, 1000)
+// })
+
+//const let
+
+let val2 = "let変数";
+console.log(val2);
+//letは上書き可能
+vel2 = "letは上書き可能"
+
+const val3 = "const変数";
+console.log(val3);
+
+const val4 = {
+  name: "pk",
+  age: 28,
+};
+val4.name = "pkpk";
+val4.addres = "osaka";
+console.log(val4);
+
+const val5 = ['dog','cat'];
+val5[0] = "bird";
+val5.push("monkey");
+console.log(val5);
