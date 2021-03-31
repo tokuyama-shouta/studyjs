@@ -287,6 +287,17 @@
 
 //テンプレート文字列
 
-const name = "pkpk";
-const age = 25;
-const message2 = `私の名前は${name}です。年齢は${age}です。`
+// const name = "pkpk";
+// const age = 25;
+// const message2 = `私の名前は${name}です。年齢は${age}です。`
+
+//アロー関数
+const func2 = (str) => {
+  return str;
+}
+console.log(func2("func2です。"));
+
+const func3 = (num1, num2) => {
+  return num1 + num2;
+}
+console.log(func3(12,21));
