@@ -295,7 +295,7 @@
 const func2 = (str) => {
   return str;
 }
-console.log(func2("func2です。"));
+console.log(func2("func2ですyo。"));
 
 const func3 = (num1, num2) => {
   return num1 + num2;
