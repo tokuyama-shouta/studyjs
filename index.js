@@ -292,12 +292,27 @@
 // const message2 = `私の名前は${name}です。年齢は${age}です。`
 
 //アロー関数
-const func2 = (str) => {
-  return str;
-}
-console.log(func2("func2ですyo。"));
+// const func2 = (str) => {
+//   return str;
+// }
+// console.log(func2("func2ですyo。"));
 
-const func3 = (num1, num2) => {
-  return num1 + num2;
-}
-console.log(func3(12,21));
+// const func3 = (num1, num2) => {
+//   return num1 + num2;
+// }
+// console.log(func3(12,21));
+
+// const myProfile = {
+//   name: "pkpk",
+//   age: 25,
+// };
+
+// const message1 = `名前は${myProfile.name}です。年齢は${myProfile.age}歳です。`;
+
+// const {name, age} = myProfile;
+// const message2 = `名前は${name}です。年は${age}歳です。`;
+
+const myProfile = ["pkpk",25];
+const message3 = `名前は${myProfile[0]}です。年齢は${myProfile[1]}歳です。`;
+const [name,age] = myProfile;
+const message4 = `名前は${name}です。年齢は${age}歳です。`;
