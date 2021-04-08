@@ -476,7 +476,7 @@ const onClickAdd = () => {
   div.appendChild(completeButton);
   div.appendChild(deleteButton);
   
-  //未完了リストに追加
+  //未完了リストに追加する
   document.getElementById("incomplete-list").appendChild(div);
   
 };
