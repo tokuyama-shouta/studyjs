@@ -484,7 +484,7 @@ const createIncompleteList = (text) => {
   });
 
 
-  //button 削除
+  //button 削除だよ
   const deleteButton = document.createElement("button");
   deleteButton.innerText = "削除";
   deleteButton.addEventListener("click", () => {
